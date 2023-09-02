@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 21px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+}
+
+.tweets-container {
+    width: 45%;
+    overflow-y: scroll;
+}
+
+.tweets-container::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+}
+
+.tweets-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.tweets-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Track background color */
+}
+
+.trending {
+    width: 25%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 17px 0;
+}
+
+.hov:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    border-radius: 8px; /* Rounded corners for box shadow */
+}
+
+
+#post-btn:hover {
+    box-shadow: 0 0 4px rgb(29, 155, 240);
+    transform: scale(1.1);
+}
+
+.nav ul li i {
+    padding: 0px 20px;
+}
+
+#post-btn {
+    background-color: rgb(29, 155, 240);
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: none;
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+#post-btn a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+.nav ul li img {
+    width: 70px;
+}
+
+.header h3 {
+    height: 53px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.header-tabs {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+}
+
+.header-tabs a {
+    color: white;
+    text-decoration: none;
+}
+
+.follow {
+    opacity: 0.7;
+}
+
+.all-tweets h2 {
+    text-align: center;
+}
+
+.all-tweets {
+    padding: 5px;
+}
+
+.tweet {
+    border: 2px solid #80808080;
+    margin: 20px 0;
+    padding: 2px 10px;
+}
+
+.tweet-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 2px solid #ccc; */
+    padding-top: 10px;
+}
+
+.btn {
+    flex: 1;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Reset margin for form */
+    padding: 0; /* Reset padding for form */
+    border: none; /* Reset border for form */
+    background-color: transparent; /* Reset background for form */
+    width: 33%;
+}
+
+.delete-form button {
+    background-color: #f44336; /* Delete button color */
+    color: white;
+    height: 44px;
+}
+
+.delete-form button:hover {
+    background-color: #d32f2f;
+}
+
+
+
+.tweet h5 {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.tweet p {
+    display: inline-block;
+    opacity: 0.7;
+}
+
+#content {
+    display: block;
+}
+
+.user {
+    font-style: italic;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search {
+    width: 80%;
+}
+
+.search input {
+    width: inherit;
+    background-color: #80808073;
+    border: none;
+    height: 35px;
+    border-radius: 15px;
+    padding: 14px;
+}
+
+.premium {
+    margin: 30px 36px;
+    padding: 10px 10px;
+    background-color: #80808073;
+    border-radius: 10px;
+}
+
+.premium h3 {
+    padding: 2px 0;
+}
+
+.premium button {
+    width: 95%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 8px;
+    background-color: rgb(29, 155, 240);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
