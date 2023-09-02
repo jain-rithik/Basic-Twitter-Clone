@@ -40,8 +40,8 @@ You can watch a live demo of this project in action [here](https://clipchamp.com
 
 ## Usage
 1. Start the application using:
-    bash
-        npm start
+    ```bash
+    node index.js
 2. Open your web browser and navigate to http://localhost:8080/tweets to use the Twitter Clone.
 
 ## Contributing
